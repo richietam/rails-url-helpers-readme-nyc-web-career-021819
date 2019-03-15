@@ -1,3 +1,7 @@
+Hello world!
+
+<ul>
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <li><%= link_to post.title, post_path(post) %></li>
 <% end %>
+</ul>
